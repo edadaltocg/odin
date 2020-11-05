@@ -32,8 +32,8 @@ def tpr95(name):
     # calculate the falsepositive error when tpr is 95%
     # calculate baseline
     T = 1
-    cifar = np.loadtxt("./softmax_scores/confidence_Base_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Base_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Base_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Base_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 1
@@ -56,8 +56,8 @@ def tpr95(name):
 
     # calculate our algorithm
     T = 1000
-    cifar = np.loadtxt("./softmax_scores/confidence_Our_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Our_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Our_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Our_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 0.12
@@ -85,8 +85,8 @@ def auroc(name):
     # calculate the AUROC
     # calculate baseline
     T = 1
-    cifar = np.loadtxt("./softmax_scores/confidence_Base_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Base_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Base_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Base_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 1
@@ -107,8 +107,8 @@ def auroc(name):
     aurocBase += fpr * tpr
     # calculate our algorithm
     T = 1000
-    cifar = np.loadtxt("./softmax_scores/confidence_Our_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Our_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Our_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Our_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 0.12
@@ -134,8 +134,8 @@ def auprIn(name):
     # calculate the AUPR
     # calculate baseline
     T = 1
-    cifar = np.loadtxt("./softmax_scores/confidence_Base_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Base_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Base_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Base_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 1
@@ -166,8 +166,8 @@ def auprIn(name):
 
     # calculate our algorithm
     T = 1000
-    cifar = np.loadtxt("./softmax_scores/confidence_Our_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Our_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Our_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Our_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 0.12
@@ -199,8 +199,8 @@ def auprOut(name):
     # calculate the AUPR
     # calculate baseline
     T = 1
-    cifar = np.loadtxt("./softmax_scores/confidence_Base_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Base_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Base_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Base_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 1
@@ -225,8 +225,8 @@ def auprOut(name):
 
     # calculate our algorithm
     T = 1000
-    cifar = np.loadtxt("./softmax_scores/confidence_Our_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Our_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Our_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Our_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 0.12
@@ -256,8 +256,8 @@ def detection(name):
     # calculate the minimum detection error
     # calculate baseline
     T = 1
-    cifar = np.loadtxt("./softmax_scores/confidence_Base_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Base_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Base_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Base_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 1
@@ -276,8 +276,8 @@ def detection(name):
 
     # calculate our algorithm
     T = 1000
-    cifar = np.loadtxt("./softmax_scores/confidence_Our_In.txt", delimiter=",")
-    other = np.loadtxt("./softmax_scores/confidence_Our_Out.txt", delimiter=",")
+    cifar = np.loadtxt("code/softmax_scores/confidence_Our_In.txt", delimiter=",")
+    other = np.loadtxt("code/softmax_scores/confidence_Our_Out.txt", delimiter=",")
     if name == "CIFAR-10":
         start = 0.1
         end = 0.12
